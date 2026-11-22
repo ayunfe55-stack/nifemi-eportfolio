@@ -16,28 +16,80 @@
   <header class="site-header">
     <a class="wordmark" href="/" aria-label="Nifemi Ajekigbe home"><span>NA</span><strong>Nifemi Ajekigbe</strong></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#projects">Projects</a><a href="/#experience">Experience</a><a class="nav-pill" href="/oluwanifemi-ajekigbe-resume.pdf" target="_blank">Résumé</a></nav>
+    <nav id="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#projects">Projects</a><a href="/#experience">Experience</a><a href="/#skills">Skills</a><a class="nav-pill" href="/oluwanifemi-ajekigbe-resume.pdf" target="_blank">Résumé</a></nav>
   </header>
 
   <main id="main">
     <section class="course-hero section-pad">
-      <div class="reveal from-left"><p class="eyebrow">Learning journal · Fall 2026</p><h1>CNT 3004<br><em>Computer Network Concepts</em></h1><p>This journal will document my experience, challenges, skills, and takeaways as I complete labs and assignments throughout the semester.</p></div>
+      <div class="reveal from-left"><p class="eyebrow">Learning journal · Fall 2026</p><h1>CNT 3004<br><em>Computer Network Concepts</em></h1><p>This journal highlights the labs, technical investigations, discussions, and challenges that strengthened my understanding of how networks communicate—and how they can be protected.</p></div>
       <aside class="course-note reveal from-right"><span class="tape tape-top" aria-hidden="true"></span><p class="handwritten">the goal</p><strong>Understand how networks communicate—and how to protect them.</strong></aside>
     </section>
 
     <section class="course-body section-pad">
-      <div class="course-intro reveal"><p class="eyebrow">Course focus</p><h2>Connecting concepts to <em>real systems.</em></h2><p>CNT 3004 supports my interest in cybersecurity by strengthening my understanding of network architecture, protocols, traffic, addressing, troubleshooting, and the movement of information between devices.</p></div>
+      <div class="course-intro reveal"><p class="eyebrow">Course focus</p><h2>Connecting concepts to <em>real systems.</em></h2><div><p>CNT 3004 supports my interest in cybersecurity by strengthening my understanding of network architecture, protocols, traffic, addressing, troubleshooting, and the movement of information between devices.</p><div class="course-tags" aria-label="Course skills"><span>Wireshark</span><span>TCP/IP</span><span>VirtualBox</span><span>Subnetting</span><span>VLANs</span><span>Network Security</span></div></div></div>
 
-      <div class="journal-heading reveal"><p class="eyebrow">Assignment reflections</p><h2>A journal that will grow with the semester.</h2></div>
-      <div class="journal-grid">
-        <article class="journal-card reveal"><span>01</span><h3>Lab &amp; assignment reflections</h3><p>Each completed assignment will include my experience, key skills, challenges, and overall takeaway. Reflections will be added here as the coursework is completed.</p></article>
-        <article class="journal-card reveal"><span>02</span><h3>Quizzes &amp; discussions</h3><p>I will record the concepts and conversations that strengthened my understanding of networks and helped me connect course material to cybersecurity.</p></article>
-        <article class="journal-card reveal"><span>03</span><h3>Overall course reflection</h3><p>At the end of the semester, I will reflect on my growth, the skills I developed, and how this course contributes to my future career.</p></article>
+      <div class="journal-heading reveal"><p class="eyebrow">Selected coursework</p><h2>Learning by investigating what is happening <em>under the surface.</em></h2><p>These assignments moved networking from diagrams and vocabulary into systems I could configure, observe, and explain.</p></div>
+      <div class="artifact-grid">
+        <article class="artifact-card reveal">
+          <div class="artifact-top"><span>01</span><p>Virtualization · System administration</p></div>
+          <h3>Virtual Lab &amp; Windows Management Tools</h3>
+          <p>I configured an Ubuntu virtual machine in VirtualBox and connected course concepts to NAT, bridged, and host-only networking. Using NAT showed me how a VM can reach the Internet for updates without being directly exposed to other devices on the physical LAN.</p>
+          <p>I also built a custom Microsoft Management Console with Device Manager, Event Viewer, and Services. Exploring device properties, system events, and service configurations helped me understand how administrators diagnose and manage a Windows system.</p>
+          <ul class="artifact-skills"><li>VirtualBox</li><li>Ubuntu</li><li>MMC</li><li>Event Viewer</li></ul>
+        </article>
+
+        <article class="artifact-card reveal">
+          <div class="artifact-top"><span>02</span><p>Wireshark · Application traffic</p></div>
+          <h3>HTTP Request &amp; Response Analysis</h3>
+          <p>I captured and filtered HTTP traffic in Wireshark, then followed individual requests and responses to identify methods, host names, status codes, source and destination addresses, and full request URIs.</p>
+          <p>Seeing messages such as <code>200 OK</code>, <code>304 Not Modified</code>, and <code>401 Unauthorized</code> inside real packets made the protocol easier to understand. The lab also demonstrated why sensitive information should not be sent through unencrypted HTTP.</p>
+          <ul class="artifact-skills"><li>HTTP</li><li>Packet filtering</li><li>Status codes</li><li>Traffic inspection</li></ul>
+        </article>
+
+        <article class="artifact-card reveal">
+          <div class="artifact-top"><span>03</span><p>TCP · Reliability</p></div>
+          <h3>TCP Fault Recovery Investigation</h3>
+          <p>I used Wireshark Expert Information and display filters to compare duplicate acknowledgments, retransmissions, fast retransmissions, and TCP data packets in both a live download and a supplied lossy capture.</p>
+          <p>The most important takeaway was understanding what reliability actually costs. Packet loss adds delay and reduces throughput, but TCP uses sequence numbers, acknowledgments, reordering, and retransmission to give the application a complete byte stream.</p>
+          <ul class="artifact-skills"><li>TCP streams</li><li>Duplicate ACKs</li><li>Retransmissions</li><li>Rate calculations</li></ul>
+        </article>
+
+        <article class="artifact-card reveal">
+          <div class="artifact-top"><span>04</span><p>Architecture · Network security</p></div>
+          <h3>Addressing, Segmentation &amp; Secure Design</h3>
+          <p>Through assignments and quizzes, I practiced subnetting, CIDR notation, VLAN tagging, trunk links, DHCP relay, inter-VLAN routing, wireless security, authentication, and switch protections.</p>
+          <p>These topics helped me see that network security is not one product or setting. It comes from intentional design—separating traffic, limiting access, choosing secure protocols, monitoring activity, and understanding where each control operates.</p>
+          <ul class="artifact-skills"><li>IPv4 &amp; CIDR</li><li>802.1Q VLANs</li><li>RADIUS</li><li>Port security</li></ul>
+        </article>
       </div>
 
-      <p class="notes-coming reveal">Course-note PDFs will be added here as the semester continues.</p>
+      <section class="discussion-section reveal" aria-labelledby="discussion-heading">
+        <div class="discussion-heading"><p class="eyebrow">Research &amp; discussions</p><h2 id="discussion-heading">Connecting networking to the <em>world around me.</em></h2><p>Short research discussions helped me look beyond definitions and consider how networking technologies affect performance, access, security, and everyday life.</p></div>
+        <div class="discussion-grid">
+          <article><h3>Wi-Fi 7</h3><p>Explored how newer wireless features can increase capacity and improve performance in environments filled with connected devices.</p></article>
+          <article><h3>IPv6</h3><p>Considered why a much larger address space and modernized addressing are necessary as Internet-connected systems continue to grow.</p></article>
+          <article><h3>Fiber Optics</h3><p>Connected the speed and reach of fiber networks to real telecommunications infrastructure and the physical work behind connectivity.</p></article>
+          <article><h3>Blockchain</h3><p>Examined how distributed ledgers create trust without a single central authority while introducing new traffic, latency, and scaling concerns.</p></article>
+          <article><h3>Edge Computing</h3><p>Studied how processing data closer to users and devices reduces latency and bandwidth use, while creating additional security responsibilities.</p></article>
+        </div>
+      </section>
 
-      <a class="back-link reveal" href="/">← Return to my portfolio</a>
+      <section class="notes-section reveal" aria-labelledby="notes-heading">
+        <div><p class="eyebrow">Study notes</p><h2 id="notes-heading">The pages I would keep in my <em>networking notebook.</em></h2><p>These are the concepts I would capture in a small set of polished handwritten iPad notes because they connect directly to later labs and security work.</p></div>
+        <div class="note-stack">
+          <article><p class="handwritten">note one</p><h3>OSI &amp; TCP/IP Models</h3><p>Layer responsibilities, encapsulation, common protocols, and how data moves from an application to the physical network.</p></article>
+          <article><p class="handwritten">note two</p><h3>Subnetting &amp; VLANs</h3><p>CIDR block sizes, usable address ranges, broadcast domains, access ports, trunk ports, and inter-VLAN routing.</p></article>
+          <article><p class="handwritten">note three</p><h3>Wireshark Filter Notebook</h3><p>Useful filters for HTTP, TCP streams, packet data, retransmissions, duplicate acknowledgments, and protocol troubleshooting.</p></article>
+        </div>
+      </section>
+
+      <section class="course-reflection reveal" aria-labelledby="reflection-heading">
+        <p class="eyebrow">Overall reflection</p>
+        <h2 id="reflection-heading">From memorizing protocols to <em>reading the network.</em></h2>
+        <div class="reflection-copy"><p>At the beginning of the course, many networking concepts felt like separate definitions: layers, ports, addresses, frames, and protocols. The hands-on labs helped those pieces connect. Capturing traffic made it possible to see where an HTTP request travels, how TCP responds when data is lost, and why choices such as NAT, VLANs, encryption, and authentication matter.</p><p>The course also strengthened my confidence with troubleshooting. I learned to slow down, apply a focused filter, inspect the evidence, and explain what the packets or system tools were showing. That process connects directly to my interests in cybersecurity, cloud systems, and AI security because protecting technology starts with understanding how devices communicate and recognizing when that communication does not look normal.</p></div>
+      </section>
+
+      <a class="back-link reveal" href="/">Return to my portfolio</a>
     </section>
   </main>
   <footer><strong>Nifemi Ajekigbe</strong><span>CNT 3004 · Computer Network Concepts</span><small>© <span id="year">2026</span> Nifemi Ajekigbe</small></footer>
