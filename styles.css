@@ -158,6 +158,8 @@ p { margin-top: 0; }
 .activities h3 { margin-bottom: 1.5rem; font: 400 2rem "DM Serif Display", serif; }
 .activity-list { display: grid; gap: .7rem; }
 .activity-list span { padding-bottom: .7rem; border-bottom: 1px solid rgba(43,38,35,.16); font-size: .88rem; font-weight: 600; }
+.resume-cta { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; margin-top: 1.6rem; padding: .75rem 1.2rem; border: 1px solid var(--forest); border-radius: 999px; background: var(--forest); color: white; font-size: .84rem; font-weight: 800; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.resume-cta:hover, .resume-cta:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(37,72,59,.2); }
 
 .course-preview { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: clamp(3rem, 8vw, 8rem); background: var(--forest); color: white; }
 .course-preview .eyebrow { color: var(--gold); }
